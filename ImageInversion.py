@@ -62,5 +62,8 @@ while not exit_flag:
 	for e in pygame.event.get():
 	
 		if e.type == pygame.QUIT:
-
+			
+			#Save image
+			pygame.image.save(win, "invertedImage.png")
+			
 			exit_flag = True
